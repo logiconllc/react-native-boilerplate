@@ -1,0 +1,28 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "~/*": ["../*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}
