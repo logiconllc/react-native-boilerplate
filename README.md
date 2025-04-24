@@ -23,22 +23,26 @@ In the output, you'll find options to open the app in a
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-
 ## Development Tools
 
 ### Nativewind
+
 This project uses [Nativewind](https://www.nativewind.dev/) for styling with Tailwind CSS.
 
 ### Prettier
+
 [Prettier](https://prettier.io/) is configured for consistent code formatting.
 
 ### ESLint
+
 [ESLint](https://eslint.org/) ensures code quality and catches potential issues.
 
 ### Husky
+
 [Husky](https://typicode.github.io/husky/#/) manages git hooks for pre-commit checks.
 
 ### Expo Router
+
 [Expo Router](https://docs.expo.dev/router/introduction) handles navigation with file-based routing.
 
 ## Resources
@@ -55,12 +59,14 @@ This project uses [Nativewind](https://www.nativewind.dev/) for styling with Tai
 The boilerplate includes a set of pre-built, customizable UI components:
 
 #### Typography
+
 - Customizable text components with various variants (h1-h6, p1-p3)
 - Multiple font weights (regular, medium, semiBold, bold)
 - Built-in text styles using Urbanist font family
 - Responsive text sizing for different platforms
 
 #### Buttons
+
 - Multiple variants (default, secondary, outline, destructive)
 - Loading state support with customizable loading text
 - Disabled state styling
@@ -68,6 +74,7 @@ The boilerplate includes a set of pre-built, customizable UI components:
 - NativeWind styling integration
 
 #### Bottom Sheet
+
 - Customizable snap points
 - Gesture handling for pan and dismiss
 - Backdrop with customizable opacity
@@ -81,8 +88,6 @@ The boilerplate includes a set of pre-built, customizable UI components:
 - **Styling**: NativeWind (Tailwind CSS) integration for consistent styling
 - **Theming**: Custom CSS variables for easy theme customization
 - **Animations**: React Native Reanimated integration for smooth animations
-
-
 
 ## Component Usage Examples
 
@@ -119,7 +124,7 @@ const bottomSheetRef = useRef<BottomSheetModal>(null);
   <View className="p-4">
     <Text>Bottom Sheet Content</Text>
   </View>
-</CustomBottomSheet>
+</CustomBottomSheet>;
 ```
 
 ## Project Structure
@@ -134,4 +139,3 @@ src/
 ├── lib/          # Utility functions and constants
 └── assets/       # Images, fonts, and other static files
 ```
-

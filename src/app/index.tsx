@@ -86,10 +86,10 @@ export default function Index() {
               Bottom Sheet Content
             </Text>
             <Text variant="p1">
-              This is an example of the bottom sheet component. You can customize
-              the content and behavior as needed.
+              This is an example of the bottom sheet component. You can
+              customize the content and behavior as needed.
             </Text>
-            <Button 
+            <Button
               className="mt-4"
               variant="secondary"
               onPress={() => bottomSheetRef.current?.close()}
