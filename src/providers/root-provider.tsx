@@ -4,13 +4,13 @@ import React, { ReactNode, useEffect } from "react";
 import { Platform, Linking } from "react-native";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { StatusBar } from "expo-status-bar";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { useInternetConnection } from "@/hooks/useInternetConnection";
 import NetInfo from "@react-native-community/netinfo";
 import { NoInternetModal } from "@/components/ui/no-internet-modal";
 import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
 import { PortalHost } from "@rn-primitives/portal";
 import { NAV_THEME } from "@/lib/constants";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const LIGHT_THEME: Theme = {
   dark: false,
