@@ -1,14 +1,16 @@
+import "@/../global.css";
+import RootProvider from "@/providers/root-provider";
 import { Stack } from "expo-router";
-import { QueryClient, QueryClientProvider } from "react-query";
-
-const queryClient = new QueryClient();
+import { SafeAreaView } from "react-native";
 
 export default function RootLayout() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="/" />
-      </Stack>
-    </QueryClientProvider>
+    <RootProvider>
+      <SafeAreaView className="flex-1">
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="index" />
+        </Stack>
+      </SafeAreaView>
+    </RootProvider>
   );
 }
